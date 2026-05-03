@@ -37,3 +37,8 @@ body::before {
     pointer-events: none;
     z-index: 10;
 }
+
+
+html {
+    scroll-behavior: smooth;
+}
