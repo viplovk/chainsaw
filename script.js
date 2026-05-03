@@ -1,7 +1,7 @@
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. Populate the Stack section
+    // 1. Populate the Stack section  Populate skills dynamically
     const skills = ['Python', 'JavaScript', 'DSA', 'HTML', 'Tailwind CSS', 'Figma', 'SQL'];
     const stackContainer = document.getElementById('stack-container');
 
@@ -27,15 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-
-
-     // Populate skills dynamically
-    skills.forEach(skill => {
-        const span = document.createElement('span');
-        span.className = 'bg-gray-800 border-2 border-gray-600 px-2 py-1 text-[10px] hover:bg-green-600 transition-colors cursor-default';
-        span.textContent = `[${skill}]`;
-        stackContainer.appendChild(span);
-    });
 
 
     
